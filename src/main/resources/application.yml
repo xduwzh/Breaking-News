@@ -4,3 +4,7 @@ spring:
     url: jdbc:mysql://localhost:3306/big_event
     username: root
     password: root
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true #match data from sql database and user pojo which has same name but in diff format
