@@ -15,9 +15,6 @@ import java.util.UUID;
 
 @RestController
 public class FileUploadController {
-    @Value("${azure.storage.account-name}")
-    private String accountName;
-
     @Value("${azure.storage.connection-string}")
     private String connectionString;
 

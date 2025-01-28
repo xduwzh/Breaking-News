@@ -4,6 +4,10 @@ spring:
     url: jdbc:mysql://localhost:3306/big_event
     username: root
     password: root
+  data:
+    redis:
+      host: localhost
+      port: 6379
 
 mybatis:
   configuration:
@@ -13,3 +17,4 @@ azure:
   storage:
     account-name: ${AZURE_ACC_NAME} # Your acc name
     connection-string: ${AZURE_CONNECTION_STRING} # Your connection string
+
