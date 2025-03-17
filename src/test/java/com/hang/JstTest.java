@@ -26,13 +26,5 @@ public class JstTest {
         System.out.println(token);
     }
 
-    @Test
-    public void testParse(){
-        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6InpoYW5nIHNhbiJ9LCJleHAiOjE3Mzc5MzIzMDF9.H7Kf6I3jNObtgz_JcDw6lUCICnzWUJTmbNhofYrTPaU";
-        JWTVerifier jwtVerifier = JWT.require(Algorithm.HMAC256("123456")).build();
-        DecodedJWT decodedJWT = jwtVerifier.verify(token);
-        Map<String, Claim> claims = decodedJWT.getClaims();
-        System.out.println(claims.get("user"));
 
-    }
 }
